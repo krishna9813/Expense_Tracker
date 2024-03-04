@@ -10,7 +10,7 @@ from constants import CHARTCOLOR_BYCAT
 from dao import UsersDAO
 import pyrebase
 from flask_pymongo import PyMongo
-
+from werkzeug.utils import url_quote
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 
