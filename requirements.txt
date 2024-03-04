@@ -1,6 +1,6 @@
 Flask==2.2.2
-Flask_PyMongo==2.3.0
+Flask-PyMongo==2.3.0
 pymongo==4.6.1
 Pyrebase4==4.7.1
-Requests==2.31.0
+requests>=2.19.1,<=2.29.9
 tinydb==4.8.0
