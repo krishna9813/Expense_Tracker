@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block head %}
+  <title>Login - Expense Manager</title>
+{% endblock %}
+{% block body %}
+<div class="container">
+    <form action="{{ url_for('login') }}" method="POST">
+        <div class="row">
+            <div column="six columns">
+                <label for="username">Username</label>
+                <input type="text" name="username"></input>
+            </div>
+            <div column="six columns">
+                <label for="email">Email</label>
+                <input type="email" name="email"></input>
+            </div>
+            <div column="six columns">
+                <label for="password">Password</label>
+                <input type="password" name="password"></input>
+            </div>
+        </div>
+        <div class="row">
+            <div column="six columns">
+                <input type="submit" class="button-primary" value="Login"></input>
+            </div>
+            <div class="six columns">
+                <a href='/forgot_password'>forgot</a>
+            </div>
+        </div>
+    </form>
+        
+        </div>
+{% endblock %}
